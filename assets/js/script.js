@@ -83,3 +83,43 @@ function myFunction() {
         navbar.classList.remove("sticky");
     }
 }
+
+//
+// const menuToggle = document.querySelector('.toggle')
+// const showCase = document.querySelector('.showcase')
+
+// menuToggle.addEventListener('click', () => {
+//     menuToggle.classList.toggle('active')
+//     showCase.classList.toggle('active')
+// })
+// side bar 
+var menu = document.getElementsByClassName("offcanvas_menu_body");
+var category = document.getElementsByClassName("offcanvas_cat");
+var cat = document.getElementById('cat_main');
+var mainMenu = document.getElementById('menu_main');
+
+category[0].style.display = "none";
+
+function myCat() {
+    category[0].style.display = "block";
+    menu[0].style.display = "none";
+}
+
+function myMenu() {
+    menu[0].style.display = "block";
+    category[0].style.display = "none";
+}
+//sub icon
+var icon = document.getElementsByClassName('sub_icon');
+var account = document.getElementsByClassName('account_main_side ');
+
+account[0].style.display = 'none';
+
+
+function myAccount() {
+    if (account[0].style.display === 'none') {
+        account[0].style.display = 'block';
+    } else {
+        account[0].style.display = 'none';
+    }
+}
