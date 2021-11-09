@@ -62,7 +62,7 @@ ul {
 }
 
 .main_medium {
-    /* display: none; */
+    display: none;
 }
 
 
@@ -292,6 +292,8 @@ header.sticky .stand:hover .vertical_main {
 
 .your {
     border: 2px solid #F3D250;
+    outline: 2px solid #F3D250 !important;
+    box-shadow: none !important;
 }
 
 .profile {
